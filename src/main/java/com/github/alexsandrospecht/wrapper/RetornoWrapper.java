@@ -1,4 +1,4 @@
-package wrapper;
+package com.github.alexsandrospecht.wrapper;
 
 import java.util.Date;
 import java.util.List;

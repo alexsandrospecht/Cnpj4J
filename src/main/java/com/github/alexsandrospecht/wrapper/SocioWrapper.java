@@ -1,4 +1,4 @@
-package wrapper;
+package com.github.alexsandrospecht.wrapper;
 
 /**
  * Created by alexsandrospecht on 22/02/17.

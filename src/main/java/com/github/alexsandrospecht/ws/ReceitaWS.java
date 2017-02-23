@@ -1,8 +1,8 @@
-package ws;
+package com.github.alexsandrospecht.ws;
 
 import feign.Param;
 import feign.RequestLine;
-import wrapper.RetornoWrapper;
+import com.github.alexsandrospecht.wrapper.RetornoWrapper;
 
 /**
  * Created by alexsandrospecht on 22/02/17.

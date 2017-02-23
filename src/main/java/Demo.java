@@ -1,5 +1,5 @@
-import util.ConsultaCnpj;
-import wrapper.RetornoWrapper;
+import com.github.alexsandrospecht.util.ConsultaCnpj;
+import com.github.alexsandrospecht.wrapper.RetornoWrapper;
 
 /**
  * Created by alexsandrospecht on 22/02/17.

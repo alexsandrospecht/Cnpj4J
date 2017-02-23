@@ -1,10 +1,10 @@
-package util;
+package com.github.alexsandrospecht.util;
 
 import com.google.gson.GsonBuilder;
 import feign.Feign;
 import feign.gson.GsonDecoder;
-import wrapper.RetornoWrapper;
-import ws.ReceitaWS;
+import com.github.alexsandrospecht.wrapper.RetornoWrapper;
+import com.github.alexsandrospecht.ws.ReceitaWS;
 
 /**
  * Created by Alexsandro on 23/02/2017.
