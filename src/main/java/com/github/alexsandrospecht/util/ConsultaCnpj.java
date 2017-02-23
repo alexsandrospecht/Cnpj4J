@@ -14,19 +14,26 @@ public class ConsultaCnpj {
     private static final String RECEITA_WS_URL = "http://www.receitaws.com.br";
 
     public static RetornoWrapper consultaCnpj(String cnpj) {
-        final ReceitaWS receitaWs = Feign
-                                    .builder()
-                                    .decoder(new GsonDecoder(new GsonBuilder().setDateFormat("dd/MM/yyyy").create()))
-                                    .target(ReceitaWS.class, RECEITA_WS_URL);
+        return consultaCnpj(
+                new GsonDecoder(
+                        new GsonBuilder()
+                                .setDateFormat("dd/MM/yyyy")
+                                .create())
+                , cnpj);
+    }
 
-        return receitaWs.consultaWrapper(cnpj);
+    public static RetornoWrapper consultaCnpj(GsonDecoder decoder, String cnpj) {
+        return Feign
+                .builder()
+                .decoder(decoder)
+                .target(ReceitaWS.class, RECEITA_WS_URL)
+                .consultaWrapper(cnpj);
     }
 
     public static String consultaData(String cnpj) {
-        final ReceitaWS receitaWs = Feign
+        return Feign
                 .builder()
-                .target(ReceitaWS.class, RECEITA_WS_URL);
-
-        return receitaWs.consulta(cnpj);
+                .target(ReceitaWS.class, RECEITA_WS_URL)
+                .consulta(cnpj);
     }
 }

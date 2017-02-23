@@ -6,7 +6,24 @@
 
     <groupId>com.github.alexsandrospecht</groupId>
     <artifactId>Cnpj4J</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>0.9.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>Cnpj4J</name>
+    <description>Biblioteca para consultas de Cnpj utilizando o ReceitaWS</description>
+    <!--<url>http://maven.apache.org</url>-->
+
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <!--<scm>-->
+        <!--<url>https://svn.apache.org/viewvc/maven</url>-->
+    <!--</scm>-->
 
     <dependencies>
         <dependency>

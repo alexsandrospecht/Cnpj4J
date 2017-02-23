@@ -1,5 +1,6 @@
 package tests;
 
+import com.github.alexsandrospecht.wrapper.AtividadeWrapper;
 import org.hamcrest.CoreMatchers;
 import org.junit.Test;
 import com.github.alexsandrospecht.util.ConsultaCnpj;
@@ -22,7 +23,13 @@ public class ConsultasTests {
 
         assertEquals("GOOGLE BRASIL INTERNET LTDA.", rw.getNome());
         assertEquals("06.990.590/0002-04", rw.getCnpj());
+        assertEquals("0.00", rw.getCapital_social());
+
         assertThat(rw.getAtividade_principal(), CoreMatchers.notNullValue());
+
+        AtividadeWrapper aw = rw.getAtividade_principal().iterator().next();
+        assertEquals("63.19-4-00", aw.getCode());
+        assertEquals("Portais, provedores de conteúdo e outros serviços de informação na internet", aw.getText());
     }
 
     @Test
