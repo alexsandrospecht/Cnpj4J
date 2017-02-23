@@ -1,4 +1,4 @@
-package com.github.alexsandrospecht.tests;
+package tests;
 
 import org.hamcrest.CoreMatchers;
 import org.junit.Test;
