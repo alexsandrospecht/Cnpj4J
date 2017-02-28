@@ -11,7 +11,6 @@
 
     <name>Cnpj4J</name>
     <description>Biblioteca para consultas de Cnpj utilizando o ReceitaWS</description>
-    <!--<url>http://maven.apache.org</url>-->
 
     <licenses>
         <license>
@@ -20,10 +19,6 @@
             <distribution>repo</distribution>
         </license>
     </licenses>
-
-    <!--<scm>-->
-        <!--<url>https://svn.apache.org/viewvc/maven</url>-->
-    <!--</scm>-->
 
     <dependencies>
         <dependency>

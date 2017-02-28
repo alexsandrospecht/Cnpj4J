@@ -1,3 +1,5 @@
+package com.github.alexsandrospecht;
+
 import com.github.alexsandrospecht.util.ConsultaCnpj;
 import com.github.alexsandrospecht.wrapper.AtividadeWrapper;
 import com.github.alexsandrospecht.wrapper.RetornoWrapper;
