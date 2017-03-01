@@ -3,7 +3,6 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>com.github.alexsandrospecht</groupId>
     <artifactId>Cnpj4J</artifactId>
     <version>0.9.0-SNAPSHOT</version>
@@ -11,6 +10,7 @@
 
     <name>Cnpj4J</name>
     <description>Biblioteca para consultas de Cnpj utilizando o ReceitaWS</description>
+    <url>https://github.com/alexsandrospecht/Cnpj4J</url>
 
     <licenses>
         <license>
@@ -19,6 +19,17 @@
             <distribution>repo</distribution>
         </license>
     </licenses>
+
+    <developers>
+        <developer>
+            <name>Alexsandro Specht</name>
+            <email>alexsandrospecht@gmail.com</email>
+        </developer>
+    </developers>
+
+    <scm>
+        <url>https://github.com/alexsandrospecht/Cnpj4J</url>
+    </scm>
 
     <dependencies>
         <dependency>
