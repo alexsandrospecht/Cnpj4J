@@ -3,22 +3,37 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>com.github.alexsandrospecht</groupId>
     <artifactId>Cnpj4J</artifactId>
-    <version>0.9.0-SNAPSHOT</version>
+    <version>0.9.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>Cnpj4J</name>
     <description>Biblioteca para consultas de Cnpj utilizando o ReceitaWS</description>
+    <url>https://github.com/alexsandrospecht/Cnpj4J</url>
 
     <licenses>
         <license>
-            <name>Apache License, Version 2.0</name>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
             <distribution>repo</distribution>
         </license>
     </licenses>
+
+    <developers>
+        <developer>
+            <name>Alexsandro Luiz Specht</name>
+            <email>alexsandrospecht@gmail.com</email>
+            <url>ttps://github.com/alexsandrospecht</url>
+            <id>alexsandrospecht</id>
+        </developer>
+    </developers>
+
+    <scm>
+        <url>https://github.com/alexsandrospecht/Cnpj4J.git</url>
+        <connection>scm:git:git://github.com/alexsandrospecht/Cnpj4J.git</connection>
+        <developerConnection>scm:git:git@github.com:alexsandrospecht/Cnpj4J.git</developerConnection>
+    </scm>
 
     <dependencies>
         <dependency>
@@ -42,5 +57,27 @@
             <version>4.12</version>
         </dependency>
     </dependencies>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.sonatype.plugins</groupId>
+                <artifactId>nexus-staging-maven-plugin</artifactId>
+                <version>1.6.3</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <serverId>ossrh</serverId>
+                    <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+                    <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
