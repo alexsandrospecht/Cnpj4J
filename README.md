@@ -23,3 +23,7 @@ ConsultaCnpj.consultaData(SEU_CNPJ);
 RetornoWrapper wp = ConsultaCnpj.consultaCnpj(SEU_CNPJ);
 ...
 ```
+
+
+### Demo
+https://github.com/alexsandrospecht/Cnpj4J/blob/master/src/main/java/com/github/alexsandrospecht/Demo.java
