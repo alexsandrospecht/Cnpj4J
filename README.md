@@ -1,4 +1,5 @@
-# Cnpj4J
+![alt tag](https://github.com/alexsandrospecht/Cnpj4J/blob/master/images/logo.PNG)
+
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
