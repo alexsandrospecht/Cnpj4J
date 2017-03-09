@@ -7,7 +7,7 @@ Cliente para consultas de CNPJ no https://www.receitaws.com.br/
 
 
 ### Maven
-```
+``` xml
 <dependency>
   <groupId>com.github.alexsandrospecht</groupId>
   <artifactId>Cnpj4J</artifactId>
