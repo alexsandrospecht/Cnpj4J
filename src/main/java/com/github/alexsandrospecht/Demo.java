@@ -18,6 +18,7 @@ public class Demo {
         System.out.println(wp.getCnpj());
         System.out.println(wp.getNome());
         System.out.println(wp.getAbertura());
+        System.out.println(wp.getStatus());
 
         AtividadeWrapper aw = wp.getAtividade_principal().iterator().next();
         System.out.println(aw.getCode());
