@@ -1,10 +1,9 @@
-![alt tag](https://github.com/alexsandrospecht/Cnpj4J/blob/master/images/logo.PNG)
-
+<p align="center">
+<img src="https://github.com/alexsandrospecht/Cnpj4J/blob/master/images/logo.PNG" alt="Localtower"> </br>
+Cliente para consultas de CNPJ no https://www.receitaws.com.br/
+</p>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-Cliente para consultas de CNPJ no https://www.receitaws.com.br/
-
 
 ### Maven
 ``` xml
