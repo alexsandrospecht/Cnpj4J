@@ -4,7 +4,7 @@ Cliente para consultas de CNPJ no https://www.receitaws.com.br/
 </p>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
+[![Build Status](https://travis-ci.org/alexsandrospecht/Cnpj4J.svg?branch=master)](https://travis-ci.org/alexsandrospecht/Cnpj4J)
 ### Maven
 ``` xml
 <dependency>
