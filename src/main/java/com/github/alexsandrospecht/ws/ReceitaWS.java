@@ -20,7 +20,4 @@ public interface ReceitaWS {
     @Headers("Authorization: {token}")
     RetornoWrapper consultaWrapperComercial(@Param("cnpj") String cnpj, @Param("token") String token);
 
-    @RequestLine("GET /v1/cnpj/{cnpj}/{re}")
-    String consultaComercial(@Param("cnpj") String cnpj, String re);
-
 }
