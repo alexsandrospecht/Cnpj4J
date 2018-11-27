@@ -32,6 +32,14 @@ public class ConsultaCnpj {
                 .consultaWrapper(retainDigits(cnpj));
     }
 
+    public static RetornoWrapper consultaCnpjComercial(GsonDecoder decoder, String cnpj, String token) {
+        return Feign
+                .builder()
+                .decoder(decoder)
+                .target(ReceitaWS.class, RECEITA_WS_URL)
+                .consultaWrapperComercial(retainDigits(cnpj), "Bearer "+token);
+    }
+
     public static String consultaData(String cnpj) {
         return Feign
                 .builder()
