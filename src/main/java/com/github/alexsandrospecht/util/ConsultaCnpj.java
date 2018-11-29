@@ -24,6 +24,15 @@ public class ConsultaCnpj {
                 , cnpj);
     }
 
+    public static RetornoWrapper consultaCnpj(String cnpj, String token) {
+        return consultaCnpj(
+                new GsonDecoder(
+                        new GsonBuilder()
+                                .setDateFormat("dd/MM/yyyy")
+                                .create())
+                , cnpj, token);
+    }
+
     public static RetornoWrapper consultaCnpj(GsonDecoder decoder, String cnpj) {
         return Feign
                 .builder()
@@ -32,12 +41,12 @@ public class ConsultaCnpj {
                 .consultaWrapper(retainDigits(cnpj));
     }
 
-    public static RetornoWrapper consultaCnpjComercial(GsonDecoder decoder, String cnpj, String token) {
+    public static RetornoWrapper consultaCnpj(GsonDecoder decoder, String cnpj, String token) {
         return Feign
                 .builder()
                 .decoder(decoder)
                 .target(ReceitaWS.class, RECEITA_WS_URL)
-                .consultaWrapperComercial(retainDigits(cnpj), "Bearer "+token);
+                .consultaWrapper(retainDigits(cnpj), "Bearer "+token);
     }
 
     public static String consultaData(String cnpj) {
@@ -45,6 +54,13 @@ public class ConsultaCnpj {
                 .builder()
                 .target(ReceitaWS.class, RECEITA_WS_URL)
                 .consulta(retainDigits(cnpj));
+    }
+
+    public static String consultaData(String cnpj, String token) {
+        return Feign
+                .builder()
+                .target(ReceitaWS.class, RECEITA_WS_URL)
+                .consulta(retainDigits(cnpj), token);
     }
 
     private static String retainDigits(String cnpj) {
