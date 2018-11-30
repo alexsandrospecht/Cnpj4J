@@ -19,32 +19,9 @@ target/
 *.zip
 *.tar.gz
 *.rar
-\.idea/compiler\.xml
 
-\.idea/encodings\.xml
-
-\.idea/libraries/Maven__com_google_code_gson_gson_2_8_0\.xml
-
-\.idea/libraries/Maven__com_google_guava_guava_21_0\.xml
-
-\.idea/libraries/Maven__com_netflix_feign_feign_core_8_18_0\.xml
-
-\.idea/libraries/Maven__com_netflix_feign_feign_gson_8_18_0\.xml
-
-\.idea/libraries/Maven__io_github_openfeign_feign_core_9_4_0\.xml
-
-\.idea/libraries/Maven__junit_junit_4_12\.xml
-
-\.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3\.xml
-
-\.idea/libraries/Maven__org_jvnet_animal_sniffer_annotation_1_0\.xml
-
-\.idea/misc\.xml
-
-\.idea/modules\.xml
-
-\.idea/uiDesigner\.xml
-
-\.idea/workspace\.xml
-
-Cnpj4J\.iml
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
