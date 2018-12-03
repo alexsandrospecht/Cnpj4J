@@ -10,18 +10,26 @@ Cliente para consultas de CNPJ no https://www.receitaws.com.br/
 <dependency>
   <groupId>com.github.alexsandrospecht</groupId>
   <artifactId>Cnpj4J</artifactId>
-  <version>0.9.3</version>
+  <version>0.9.4</version>
 </dependency>
 ```
 
+Verifique a última versão em: https://search.maven.org/search?q=cnpj4j
+
 ### Como utilizar?
 ```java
-// Retorno em String
-ConsultaCnpj.consultaData(SEU_CNPJ);
 
-// RetornoWrapper
-RetornoWrapper wp = ConsultaCnpj.consultaCnpj(SEU_CNPJ);
+// Utilizando o retorno como String:
+final String retorno = ConsultaCnpj.consultaData(SEU_CNPJ);
+// ...
+
+
+// Utilizando o wrapper:
+final RetornoWrapper retorno = ConsultaCnpj.consultaCnpj(SEU_CNPJ);
+retorno.getNome();
+retorno.getAtividade_principal();
 ...
+
 ```
 
 

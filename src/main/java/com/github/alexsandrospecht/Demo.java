@@ -4,9 +4,6 @@ import com.github.alexsandrospecht.util.ConsultaCnpj;
 import com.github.alexsandrospecht.wrapper.AtividadeWrapper;
 import com.github.alexsandrospecht.wrapper.RetornoWrapper;
 
-/**
- * Created by alexsandrospecht on 22/02/17.
- */
 public class Demo {
 
     private static final String GOOGLE_CNPJ = "06990590000204";
