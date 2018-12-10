@@ -3,9 +3,6 @@ package com.github.alexsandrospecht.wrapper;
 import java.util.Date;
 import java.util.List;
 
-/**
- * Created by alexsandrospecht on 22/02/17.
- */
 public class RetornoWrapper {
 
     private String status;

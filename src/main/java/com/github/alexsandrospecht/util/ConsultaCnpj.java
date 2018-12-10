@@ -7,9 +7,6 @@ import feign.gson.GsonDecoder;
 import com.github.alexsandrospecht.wrapper.RetornoWrapper;
 import com.github.alexsandrospecht.ws.ReceitaWS;
 
-/**
- * Created by Alexsandro on 23/02/2017.
- */
 public class ConsultaCnpj {
 
     private static final String RECEITA_WS_URL = "https://www.receitaws.com.br";
@@ -69,6 +66,7 @@ public class ConsultaCnpj {
         if (digits.length() != 14) {
             return DEFAULT_CNPJ;
         }
+
         return digits;
     }
 }
