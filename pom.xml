@@ -7,11 +7,16 @@
     <artifactId>Cnpj4J</artifactId>
     <version>0.9.5</version>
     <packaging>jar</packaging>
-
+         
     <name>Cnpj4J</name>
     <description>Biblioteca para consultas de Cnpj utilizando o ReceitaWS</description>
     <url>https://github.com/alexsandrospecht/Cnpj4J</url>
 
+    <properties>
+         <maven.compiler.source>1.8</maven.compiler.source>
+         <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+         
     <licenses>
         <license>
             <name>MIT License</name>
